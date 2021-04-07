@@ -15,7 +15,7 @@ namespace RESTschoolCD.Managers.Tests
         {
             StudentsManager manager = new StudentsManager();
             List<Student> allStudents = manager.GetAll();
-            Assert.AreEqual(1, allStudents.Count);
+            Assert.AreEqual(10, allStudents.Count);
             Assert.AreEqual("Anders", allStudents[0].Name);
         }
     }
