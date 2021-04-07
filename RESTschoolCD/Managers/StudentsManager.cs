@@ -18,5 +18,10 @@ namespace RESTschoolCD.Managers
         {
             return new List<Student>(Data);
         }
+
+        public Student GetById(int id)
+        {
+            return Data.FirstOrDefault(student => student.Id == id);
+        }
     }
 }

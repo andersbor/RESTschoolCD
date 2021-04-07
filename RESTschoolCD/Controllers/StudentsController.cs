@@ -24,9 +24,9 @@ namespace RESTschoolCD.Controllers
 
         // GET api/<StudentsController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Student Get(int id)
         {
-            return "value";
+            return _manager.GetById(id);
         }
 
         // POST api/<StudentsController>
